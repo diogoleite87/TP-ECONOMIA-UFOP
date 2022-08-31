@@ -1,4 +1,5 @@
 import * as S from './style';
+import { NavLink } from "react-router-dom";
 
 interface IProps {
     name: string;
@@ -10,6 +11,8 @@ export default function SelectButton(props: IProps) {
     const { name, href } = props
 
     return (
-        <S.Button href={href}>{name}</S.Button>
+        <NavLink to={href}>
+            <S.Button href={href}>{name}</S.Button>
+        </NavLink>
     )
 }

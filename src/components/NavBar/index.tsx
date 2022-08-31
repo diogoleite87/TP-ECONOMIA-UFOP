@@ -6,8 +6,8 @@ export default function NavBar() {
 
     return (
         <S.Container>
-            <SelectButton name="TESTE 1" href="#" />
-            <SelectButton name="TESTE 2" href="#" />
+            <SelectButton name="TELA INICIAL" href="/" />
+            <SelectButton name="TABELA" href="/table" />
         </S.Container>
     )
 }
