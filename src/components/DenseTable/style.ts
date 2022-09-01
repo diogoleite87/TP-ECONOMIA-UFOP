@@ -16,7 +16,3 @@ export const Table = styled.table`
     margin-top: 5vh;
     margin-bottom: 5vh;
 `
-
-export const Submit = styled.button` 
-
-`
