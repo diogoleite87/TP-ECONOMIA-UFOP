@@ -13,6 +13,11 @@ export const Container = styled.div`
     border-radius: 15px;
     margin-bottom: 40px;
 
+    @media(max-width: 800px) {
+        -webkit-margin-start: 2.5vh;
+        -webkit-margin-end: 2.5vh;
+  }
+
 `
 
 export const Content = styled.div`
@@ -44,11 +49,26 @@ export const Content = styled.div`
         color: rgb(51, 158, 83);
         transition: 0.3s;
     }
+
+    @media(max-width: 800px) {
+        p {
+            font-size: 1em;
+        }
+
+        h2 {
+            font-size: 1.4em;
+        }
+    }
+
 `
 
 export const Title = styled.h2`
     margin-top: 5vh;
     text-transform: uppercase;
+
+    @media(max-width: 800px) {
+        font-size: 1.4em;
+    }
 `
 
 export const Quest = styled.p`

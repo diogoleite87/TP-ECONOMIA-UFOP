@@ -4,6 +4,8 @@ export const Container = styled.div`
     align-items: center;
     text-align: center;
     justify-content: center;
+
+    overflow-x: auto;
 `
 
 export const Table = styled.table`
@@ -15,4 +17,22 @@ export const Table = styled.table`
     margin: auto;
     margin-top: 5vh;
     margin-bottom: 5vh;
+
+    input {
+        width: 5em;
+    }
+
+    @media(max-width: 800px) {
+
+        input {
+            width: 3em;
+        }
+  
+    }
+`
+
+export const Graphic = styled.div`
+    align-items: center;
+    text-align: center;
+    justify-content: center;
 `

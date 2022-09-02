@@ -13,6 +13,11 @@ export const Title = styled.h1 `
     color: #fff;
     text-transform: uppercase;
 
+    @media(max-width: 800px) {
+
+        font-size: 1.2em;
+    }
+
 `
 export const Description = styled.a`
     padding: 0.5vh;
@@ -24,4 +29,10 @@ export const Description = styled.a`
         color: rgb(51, 158, 83);
         transition: 0.2s;
     }
+    @media(max-width: 800px) {
+
+        font-size: 1em;
+    }
+
+
 `
