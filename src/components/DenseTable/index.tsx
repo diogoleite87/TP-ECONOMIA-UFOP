@@ -1,5 +1,7 @@
 import { useState } from 'react';
 import * as S from './style'
+import Graphic from '../Graphic';
+
 
 export default function Table() {
 
@@ -148,6 +150,10 @@ export default function Table() {
         </tr>
 
       </S.Table>
+
+      <Graphic cf={cf} q0={q0} q1={q1} q2={q2} q3={q3} q4={q4} q5={q5} q6={q6}
+        ct1={ct1} ct2={ct2} ct3={ct3} ct4={ct4} ct5={ct5} ct6={ct6} />
+
     </S.Container>
   )
 }
