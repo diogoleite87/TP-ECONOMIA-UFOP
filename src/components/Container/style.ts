@@ -58,6 +58,12 @@ export const Content = styled.div`
         h2 {
             font-size: 1.4em;
         }
+
+        * {
+            margin-inline-start: 10px;
+            margin-inline-end: 10px;
+            padding: 1px;
+        }
     }
 
 `
