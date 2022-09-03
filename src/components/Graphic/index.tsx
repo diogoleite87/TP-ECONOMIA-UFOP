@@ -32,17 +32,17 @@ const Graphic = (props: IPros) => {
     const { q0, q1, q2, q3, q4, q5, q6, cf, ct1, ct2, ct3, ct4, ct5, ct6 } = props;
 
     var data = [
-        { name: q0, CF: cf, CV: (cf - cf), CT: cf },
-        { name: q1, CF: cf, CV: (ct1 - cf), CT: ct1, CFme: (cf / q1), CVme: ((ct1 - cf) / q1), Cme: (ct1 / q1), Cmg: ((ct1 - cf) / (q1 - q0)).toFixed(2) },
-        { name: q2, CF: cf, CV: (ct2 - cf), CT: ct2, CFme: (cf / q2), CVme: ((ct2 - cf) / q2), Cme: (ct2 / q2), Cmg: (((ct2 - cf) - (ct1 - cf)) / (q2 - q1)).toFixed(2) },
-        { name: q3, CF: cf, CV: (ct3 - cf), CT: ct3, CFme: (cf / q3), CVme: ((ct3 - cf) / q3), Cme: (ct3 / q3), Cmg: (((ct3 - cf) - (ct2 - cf)) / (q3 - q2)).toFixed(2) },
-        { name: q4, CF: cf, CV: (ct4 - cf), CT: ct4, CFme: (cf / q4), CVme: ((ct4 - cf) / q4), Cme: (ct4 / q4), Cmg: (((ct4 - cf) - (ct3 - cf)) / (q4 - q3)).toFixed(2) },
-        { name: q5, CF: cf, CV: (ct5 - cf), CT: ct5, CFme: (cf / q5), CVme: ((ct5 - cf) / q5), Cme: (ct5 / q5), Cmg: (((ct5 - cf) - (ct4 - cf)) / (q5 - q4)).toFixed(2) },
-        { name: q6, CF: cf, CV: (ct6 - cf), CT: ct6, CFme: (cf / q6), CVme: ((ct6 - cf) / q6), Cme: (ct6 / q6), Cmg: (((ct6 - cf) - (ct5 - cf)) / (q6 - q5)).toFixed(2) },
+        { name: q0, CF: cf.toFixed(1), CV: (cf - cf).toFixed(1), CT: cf },
+        { name: q1, CF: cf.toFixed(1), CV: (ct1 - cf).toFixed(1), CT: ct1.toFixed(1), CFme: (cf / q1).toFixed(1), CVme: ((ct1 - cf) / q1).toFixed(1), Cme: (ct1 / q1).toFixed(1), Cmg: ((ct1 - cf) / (q1 - q0)).toFixed(1) },
+        { name: q2, CF: cf.toFixed(1), CV: (ct2 - cf).toFixed(1), CT: ct2.toFixed(1), CFme: (cf / q2).toFixed(1), CVme: ((ct2 - cf) / q2).toFixed(1), Cme: (ct2 / q2).toFixed(1), Cmg: (((ct2 - cf) - (ct1 - cf)) / (q2 - q1)).toFixed(1) },
+        { name: q3, CF: cf.toFixed(1), CV: (ct3 - cf).toFixed(1), CT: ct3.toFixed(1), CFme: (cf / q3).toFixed(1), CVme: ((ct3 - cf) / q3).toFixed(1), Cme: (ct3 / q3).toFixed(1), Cmg: (((ct3 - cf) - (ct2 - cf)) / (q3 - q2)).toFixed(1) },
+        { name: q4, CF: cf.toFixed(1), CV: (ct4 - cf).toFixed(1), CT: ct4.toFixed(1), CFme: (cf / q4).toFixed(1), CVme: ((ct4 - cf) / q4).toFixed(1), Cme: (ct4 / q4).toFixed(1), Cmg: (((ct4 - cf) - (ct3 - cf)) / (q4 - q3)).toFixed(1) },
+        { name: q5, CF: cf.toFixed(1), CV: (ct5 - cf).toFixed(1), CT: ct5.toFixed(1), CFme: (cf / q5).toFixed(1), CVme: ((ct5 - cf) / q5).toFixed(1), Cme: (ct5 / q5).toFixed(1), Cmg: (((ct5 - cf) - (ct4 - cf)) / (q5 - q4)).toFixed(1) },
+        { name: q6, CF: cf.toFixed(1), CV: (ct6 - cf).toFixed(1), CT: ct6.toFixed(1), CFme: (cf / q6).toFixed(1), CVme: ((ct6 - cf) / q6).toFixed(1), Cme: (ct6 / q6).toFixed(1), Cmg: (((ct6 - cf) - (ct5 - cf)) / (q6 - q5)).toFixed(1) },
     ];
 
     return (
-        <LineChart width={900} height={500} data={data}>
+        <LineChart width={600} height={500} data={data}>
             <Line type="monotone" dataKey="CF" stroke="#2196F3" strokeWidth={3} />
             <Line type="monotone" dataKey="CV" stroke="#ff1168" strokeWidth={3} />
             <Line type="monotone" dataKey="CT" stroke="#0CF25D" strokeWidth={3} />

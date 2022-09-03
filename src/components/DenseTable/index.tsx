@@ -1,6 +1,8 @@
-import { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import * as S from './style'
+
 import Graphic from '../Graphic';
+import ContainerAnalysis from '../ContainerAnalysis';
 
 
 export default function Table() {
@@ -21,7 +23,28 @@ export default function Table() {
   const [q5, setQ5] = useState<number>(5);
   const [q6, setQ6] = useState<number>(6);
 
+  type Analysis = {
+    id: number;
+    text: string
+  };
+
+  const [analysis, setAnalysis] = useState<Analysis[]>([])
+
+  function checkAnalysis() {
+    if (ct1 > 3 * cf) {
+      addAnalysis("CT1 é 3 * maior que CF");
+    }
+  }
+
+  function addAnalysis(text: string) {
+    setAnalysis(prevAnalysis => [
+      ...prevAnalysis,
+      { id: analysis.length + 1, text: text },
+    ])
+  }
+
   return (
+
     <S.Container>
       <S.Table>
 
@@ -151,10 +174,28 @@ export default function Table() {
 
       </S.Table>
 
-      <S.Graphic>
-        <Graphic cf={cf} q0={q0} q1={q1} q2={q2} q3={q3} q4={q4} q5={q5} q6={q6}
-          ct1={ct1} ct2={ct2} ct3={ct3} ct4={ct4} ct5={ct5} ct6={ct6} />
-      </S.Graphic>
+      <S.ContainerGraphic>
+        <S.Graphic>
+
+          <Graphic cf={cf} q0={q0} q1={q1} q2={q2} q3={q3} q4={q4} q5={q5} q6={q6}
+            ct1={ct1} ct2={ct2} ct3={ct3} ct4={ct4} ct5={ct5} ct6={ct6} />
+
+        </S.Graphic>
+
+        <ContainerAnalysis>
+
+          <button onClick={checkAnalysis}>Analisar</button>
+
+          {analysis.map((analysis, index) => {
+            return (
+              <div key={index}>
+                <p><span>Analise({analysis.id})</span>: {analysis.text}</p>
+              </div>
+            );
+          })}
+
+        </ContainerAnalysis>
+      </S.ContainerGraphic>
 
     </S.Container>
   )
