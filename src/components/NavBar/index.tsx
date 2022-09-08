@@ -8,6 +8,7 @@ export default function NavBar() {
         <S.Container>
             <SelectButton name="TELA INICIAL" href="/" />
             <SelectButton name="TABELA" href="/table" />
+            <SelectButton name="CPP" href="/cpp" />
         </S.Container>
     )
 }

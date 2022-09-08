@@ -23,8 +23,8 @@ export const Container = styled.div`
 export const Content = styled.div`
 
     * {
-        margin-inline-start: 15px;
-        margin-inline-end: 15px;
+        /* margin-inline-start: 15px;
+        margin-inline-end: 15px; */
         padding: 15px;
         position: relative;
     }

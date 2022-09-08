@@ -6,9 +6,12 @@ import {
     Tooltip,
     XAxis,
     YAxis,
+    ResponsiveContainer
 } from "recharts";
 
-interface IPros {
+import * as S from "./style"
+
+interface IProps {
 
     q0: number;
     q1: number;
@@ -27,7 +30,7 @@ interface IPros {
     ct6: number;
 }
 
-const Graphic = (props: IPros) => {
+const Graphic = (props: IProps) => {
 
     const { q0, q1, q2, q3, q4, q5, q6, cf, ct1, ct2, ct3, ct4, ct5, ct6 } = props;
 
@@ -42,21 +45,25 @@ const Graphic = (props: IPros) => {
     ];
 
     return (
-        <LineChart width={600} height={500} data={data}>
-            <Line type="monotone" dataKey="CF" stroke="#2196F3" strokeWidth={3} />
-            <Line type="monotone" dataKey="CV" stroke="#ff1168" strokeWidth={3} />
-            <Line type="monotone" dataKey="CT" stroke="#0CF25D" strokeWidth={3} />
-            <Line type="monotone" dataKey="CFme" stroke="#F44236" strokeWidth={3} />
-            <Line type="monotone" dataKey="CVme" stroke="#FFCA29" strokeWidth={3} />
-            <Line type="monotone" dataKey="Cme" stroke="#F27405" strokeWidth={3} />
-            <Line type="monotone" dataKey="Cmg" stroke="#f0ffc9" strokeWidth={3} />
+        <div style={{ width: '80%', height: 400 }}>
+            <ResponsiveContainer>
+                <LineChart data={data}>
+                    <Line type="monotone" dataKey="CF" stroke="#2196F3" strokeWidth={3} />
+                    <Line type="monotone" dataKey="CV" stroke="#ff1168" strokeWidth={3} />
+                    <Line type="monotone" dataKey="CT" stroke="#0CF25D" strokeWidth={3} />
+                    <Line type="monotone" dataKey="CFme" stroke="#F44236" strokeWidth={3} />
+                    <Line type="monotone" dataKey="CVme" stroke="#FFCA29" strokeWidth={3} />
+                    <Line type="monotone" dataKey="Cme" stroke="#F27405" strokeWidth={3} />
+                    <Line type="monotone" dataKey="Cmg" stroke="#f0ffc9" strokeWidth={3} />
 
-            <CartesianGrid stroke="#ccc" />
-            <XAxis dataKey="name" />
-            <YAxis />
-            <Tooltip />
-            <Legend />
-        </LineChart>
+                    <CartesianGrid stroke="#ccc" />
+                    <XAxis dataKey="name" />
+                    <YAxis />
+                    <Tooltip />
+                    <Legend />
+                </LineChart>
+            </ResponsiveContainer>
+        </div>
     );
 };
 

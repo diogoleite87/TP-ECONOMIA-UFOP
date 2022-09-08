@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const Container = styled.div`
     align-items: center;
     text-align: center;
-    justify-content: center;
+    justify-content: space-space-between;
 
     overflow-x: auto;
 `
@@ -32,15 +32,20 @@ export const Table = styled.table`
 `
 export const ContainerGraphic = styled.div`
     display: inline-flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     margin-right: 10vh;
+
+    @media(max-width: 1440px) {
+        display: inline;
+
+    }
 `
 export const Graphic = styled.div`
     align-items: center;
     text-align: center;
     justify-content: center;
-    -webkit-margin-start: none;
-    -webkit-margin-end: none;
+    /* -webkit-margin-start: none;
+    -webkit-margin-end: none; */
 `
 
 export const Analysis = styled.div`
