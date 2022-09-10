@@ -13,6 +13,8 @@ export const Container = styled.div `
     text-align: center;
     align-items: center;
     justify-content: center;
+    margin-inline-start: 10px;
+    margin-inline-end: 10px;
 
     button {
         position: relative;

@@ -45,25 +45,27 @@ const Graphic = (props: IProps) => {
     ];
 
     return (
-        <div style={{ width: '80%', height: 400 }}>
-            <ResponsiveContainer>
-                <LineChart data={data}>
-                    <Line type="monotone" dataKey="CF" stroke="#2196F3" strokeWidth={3} />
-                    <Line type="monotone" dataKey="CV" stroke="#ff1168" strokeWidth={3} />
-                    <Line type="monotone" dataKey="CT" stroke="#0CF25D" strokeWidth={3} />
-                    <Line type="monotone" dataKey="CFme" stroke="#F44236" strokeWidth={3} />
-                    <Line type="monotone" dataKey="CVme" stroke="#FFCA29" strokeWidth={3} />
-                    <Line type="monotone" dataKey="Cme" stroke="#F27405" strokeWidth={3} />
-                    <Line type="monotone" dataKey="Cmg" stroke="#f0ffc9" strokeWidth={3} />
+        <S.Container>
+            <div style={{ width: '85%', height: 300, }}>
+                <ResponsiveContainer>
+                    <LineChart data={data}>
+                        <Line type="monotone" dataKey="CF" stroke="#2196F3" strokeWidth={3} />
+                        <Line type="monotone" dataKey="CV" stroke="#ff1168" strokeWidth={3} />
+                        <Line type="monotone" dataKey="CT" stroke="#0CF25D" strokeWidth={3} />
+                        <Line type="monotone" dataKey="CFme" stroke="#F44236" strokeWidth={3} />
+                        <Line type="monotone" dataKey="CVme" stroke="#FFCA29" strokeWidth={3} />
+                        <Line type="monotone" dataKey="Cme" stroke="#F27405" strokeWidth={3} />
+                        <Line type="monotone" dataKey="Cmg" stroke="#f0ffc9" strokeWidth={3} />
 
-                    <CartesianGrid stroke="#ccc" />
-                    <XAxis dataKey="name" />
-                    <YAxis />
-                    <Tooltip />
-                    <Legend />
-                </LineChart>
-            </ResponsiveContainer>
-        </div>
+                        <CartesianGrid stroke="#ccc" />
+                        <XAxis dataKey="name" />
+                        <YAxis />
+                        <Tooltip />
+                        <Legend />
+                    </LineChart>
+                </ResponsiveContainer>
+            </div>
+        </S.Container>
     );
 };
 

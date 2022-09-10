@@ -53,6 +53,8 @@ export const Content = styled.div`
     @media(max-width: 800px) {
         p {
             font-size: 1em;
+            margin-inline-start: 10px;
+            margin-inline-end: 10px;
         }
 
         h2 {
@@ -60,8 +62,6 @@ export const Content = styled.div`
         }
 
         * {
-            margin-inline-start: 10px;
-            margin-inline-end: 10px;
             padding: 1px;
         }
     }
