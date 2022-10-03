@@ -19,6 +19,10 @@ export const Title = styled.p`
 
         font-size: 0.8em;
     }
+
+    @media(max-width: 500px) {
+        font-size: 0.65em;
+    }
 `
 
 export const ContainerText = styled.div` 
@@ -30,6 +34,10 @@ export const TitleDescription = styled.p`
 
         font-size: 0.8em;
     }
+
+    @media(max-width: 500px) {
+        font-size: 0.6em;
+    }
 `
 
 export const UfopIcon = styled.img` 
@@ -38,5 +46,10 @@ export const UfopIcon = styled.img`
 
     @media(max-width: 800px) {
 
+    }
+
+    @media(max-width: 500px) {
+        width: 40px;
+        height: 80px;
     }
 `
