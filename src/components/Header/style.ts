@@ -7,7 +7,7 @@ export const Container = styled.div`
     flex-direction: column;
 `
 
-export const Title = styled.h1 `
+export const Title = styled.h1`
     margin-top: 3vh;
     margin-bottom: 2vh;
     color: #fff;
