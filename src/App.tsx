@@ -2,6 +2,7 @@ import GlobalStyled from "./styles/global"
 import { BrowserRouter } from "react-router-dom"
 
 import Header from "./components/Header"
+import { Footer } from "./components/Footer"
 import { Router } from "./router"
 
 function App() {
@@ -9,15 +10,13 @@ function App() {
   return (
     <BrowserRouter>
       <GlobalStyled />
-      <header>
-        <Header />
-      </header>
-      <body>
-        <Router />
-      </body>
-      <footer>
 
-      </footer>
+      <Header />
+
+      <Router />
+
+      <Footer />
+
     </BrowserRouter>
   )
 }
