@@ -31,42 +31,42 @@ export default function CppTable() {
 
                 <tr>
                     <td><input type="number"
-                        onChange={(e) => setX0(Number(e.target.value))} value={x0} /></td>
+                        onChange={(e) => setX0(Number(e.target.value))} value={x0} disabled /></td>
                     <td><input type="number"
                         onChange={(e) => setY0(Number(e.target.value))} value={y0} /></td>
                 </tr>
 
                 <tr>
                     <td><input type="number"
-                        onChange={(e) => setX1(Number(e.target.value))} value={x1} /></td>
+                        onChange={(e) => setX1(Number(e.target.value))} value={x1} disabled /></td>
                     <td><input type="number"
                         onChange={(e) => setY1(Number(e.target.value))} value={y1} /></td>
                 </tr>
 
                 <tr>
                     <td><input type="number"
-                        onChange={(e) => setX2(Number(e.target.value))} value={x2} /></td>
+                        onChange={(e) => setX2(Number(e.target.value))} value={x2} disabled /></td>
                     <td><input type="number"
                         onChange={(e) => setY2(Number(e.target.value))} value={y2} /></td>
                 </tr>
 
                 <tr>
                     <td><input type="number"
-                        onChange={(e) => setX3(Number(e.target.value))} value={x3} /></td>
+                        onChange={(e) => setX3(Number(e.target.value))} value={x3} disabled /></td>
                     <td><input type="number"
                         onChange={(e) => setY3(Number(e.target.value))} value={y3} /></td>
                 </tr>
 
                 <tr>
                     <td><input type="number"
-                        onChange={(e) => setX4(Number(e.target.value))} value={x4} /></td>
+                        onChange={(e) => setX4(Number(e.target.value))} value={x4} disabled /></td>
                     <td><input type="number"
                         onChange={(e) => setY4(Number(e.target.value))} value={y4} /></td>
                 </tr>
 
                 <tr>
                     <td><input type="number"
-                        onChange={(e) => setX5(Number(e.target.value))} value={x5} /></td>
+                        onChange={(e) => setX5(Number(e.target.value))} value={x5} disabled /></td>
                     <td><input type="number"
                         onChange={(e) => setY5(Number(e.target.value))} value={y5} /></td>
                 </tr>
