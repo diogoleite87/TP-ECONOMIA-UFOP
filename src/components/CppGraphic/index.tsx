@@ -44,12 +44,12 @@ export default function CppGraphic(props: IProps) {
 
     function checkAnalysis() {
 
-        addAnalysis("O custo de " + x0 + " unidades de X para " + y0 + " unidades de Y é: " + (y0 - y0))
-        addAnalysis("O custo de " + x1 + " unidades de X para " + y1 + " unidades de Y é: " + (y0 - y1))
-        addAnalysis("O custo de " + x2 + " unidades de X para " + y2 + " unidades de Y é: " + (y1 - y2))
-        addAnalysis("O custo de " + x3 + " unidades de X para " + y3 + " unidades de Y é: " + (y2 - y3))
-        addAnalysis("O custo de " + x4 + " unidades de X para " + y4 + " unidades de Y é: " + (y3 - y4))
-        addAnalysis("O custo de " + x5 + " unidades de X para " + y5 + " unidades de Y é: " + (y4 - y5))
+        addAnalysis("O custo de oportunidade de " + x0 + " unidades de X para " + y0 + " unidades de Y é: " + (y0 - y0))
+        addAnalysis("O custo de oportunidade de " + x1 + " unidades de X para " + y1 + " unidades de Y é: " + (y0 - y1))
+        addAnalysis("O custo de oportunidade de " + x2 + " unidades de X para " + y2 + " unidades de Y é: " + (y1 - y2))
+        addAnalysis("O custo de oportunidade de " + x3 + " unidades de X para " + y3 + " unidades de Y é: " + (y2 - y3))
+        addAnalysis("O custo de oportunidade de " + x4 + " unidades de X para " + y4 + " unidades de Y é: " + (y3 - y4))
+        addAnalysis("O custo de oportunidade de " + x5 + " unidades de X para " + y5 + " unidades de Y é: " + (y4 - y5))
 
 
     }
@@ -100,7 +100,7 @@ export default function CppGraphic(props: IProps) {
 
 
             <S.ContainerAnalysis>
-                <ContainerAnalysis>
+                <ContainerAnalysis title='Custo de Oportunidade'>
 
                     <button onClick={checkAnalysis}>Analisar</button>
 

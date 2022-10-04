@@ -182,7 +182,7 @@ export default function Table() {
 
         </S.Graphic>
 
-        <ContainerAnalysis>
+        <ContainerAnalysis title='Histórico de Analises'>
 
           <button onClick={checkAnalysis}>Analisar</button>
 

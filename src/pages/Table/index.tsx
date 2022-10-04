@@ -24,12 +24,12 @@ export default function Table() {
 
                 <h2>Exemplos de custos de produção: </h2>
                 <p><S.Span>Custo variável (CV): </S.Span>São todos aqueles custos que variam de acordo com a quantidade que foi produzida. Exemplo: Matérias primas;</p>
-                <p><S.Span>Custo variável médio (CVM): </S.Span>Ele diz respeito ao custo variável para cada unidade produzida. Variável importante para a precificação correta do produto;</p>
+                <p><S.Span>Custo variável médio (CVMe): </S.Span>Ele diz respeito ao custo variável para cada unidade produzida. Variável importante para a precificação correta do produto;</p>
                 <p><S.Span>Custo fixo (CF): </S.Span>São todos aqueles custos que não variam independentemente da quantidade que foi produzida. Exemplo: O valor do aluguel a curto prazo;</p>
 
-                <p><S.Span>Custo fixo médio (CFM): </S.Span>É o valor do custo fixo diluído por cada unidade que foi produzida, descobrindo o custo fixo de cada unidade para a empresa. CF/QUANTIDADE;</p>
+                <p><S.Span>Custo fixo médio (CFMe): </S.Span>É o valor do custo fixo diluído por cada unidade que foi produzida, descobrindo o custo fixo de cada unidade para a empresa. CF/QUANTIDADE;</p>
                 <p><S.Span>Custo total (CT): </S.Span>Soma de todos os custos que uma empresa possui, seja ele fixo ou variável. CV + CF;</p>
-                <p><S.Span>Custo total médio (CTM): </S.Span>É obtido através da divisão do custo total pela quantidade produzida. Importante variável a ser considerada, como o foco é o lucro é sempre interessante o valor de venda ser maior que o custo total médio;</p>
+                <p><S.Span>Custo total médio (CTMe): </S.Span>É obtido através da divisão do custo total pela quantidade produzida. Importante variável a ser considerada, como o foco é o lucro é sempre interessante o valor de venda ser maior que o custo total médio;</p>
                 <p><S.Span>Custo marginal (CMG): </S.Span>Se diz respeito ao custo de se produzir uma nova unidade de um produto;</p>
                 <p><S.Span>Custo de oportunidade: </S.Span>Se diz respeito ao valor que você deixou de ganhar por fazer determinada escolha;</p>
                 <p><S.Span>Lucro: </S.Span>É a receita total menos os custos totais;</p>

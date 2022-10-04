@@ -4,15 +4,16 @@ import { ReactNode } from "react";
 
 interface IProps {
     children?: ReactNode
+    title: string;
 }
 
 export default function ContainerAnalysis(props: IProps) {
 
-    const { children } = props
+    const { children, title } = props
 
     return (
         <S.Container>
-            <S.Title>Histórico de Analises</S.Title>
+            <S.Title>{title}</S.Title>
             {children}
         </S.Container>
     )

@@ -12,6 +12,13 @@ export default function CPP() {
                 <p>A CPP é vista como básica porque, por meio dela, é possível considerar os fatores de produção para chegar à capacidade produtiva da empresa, cidade ou país.
                     A eficiência produtiva será o fator determinante sobre a possibilidade de investir em determinado tipo de produto ou não.
                 </p>
+
+                <h2>Custo de Oportunidade</h2>
+                <p>“Custo de oportunidade de um produto é a
+                    alternativa que tem de ser sacrificada a fim de
+                    se obter esse produto.”</p>
+
+                <p>O Custo de Oportunidade representa o custo associado a uma determinada escolha medido em termos da melhor oportunidade perdida. Por outras palavras, o custo de oportunidade representa o valor que atribuímos à melhor alternativa de que prescindimos quando efetuamos a nossa escolha.</p>
                 <CppGraphic />
             </>
         </Container>
