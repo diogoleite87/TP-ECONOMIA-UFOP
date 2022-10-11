@@ -76,8 +76,9 @@ export default function CppGraphic(props: IProps) {
     ];
 
     return (
-        <S.Container>
-            <ResponsiveContainer width="100%" height={300}>
+        <>
+
+            <ResponsiveContainer width="90%" height={350}>
                 <LineChart
                     width={500}
                     height={200}
@@ -98,7 +99,6 @@ export default function CppGraphic(props: IProps) {
                 </LineChart>
             </ResponsiveContainer>
 
-
             <S.ContainerAnalysis>
                 <ContainerAnalysis title='Custo de Oportunidade'>
 
@@ -118,6 +118,7 @@ export default function CppGraphic(props: IProps) {
             </S.ContainerAnalysis>
 
 
-        </S.Container>
+
+        </>
     )
 }

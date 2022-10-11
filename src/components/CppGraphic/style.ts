@@ -15,7 +15,11 @@ export const Container = styled.div`
 `
 
 export const ContainerAnalysis = styled.div` 
-    margin-inline-start: 15vh;
+align-items: center;
+justify-content: center;
+justify-items: center;
+text-align: center;
+display: flex;
 
     @media(max-width: 800px) {
         margin-inline-start: 5vh;
@@ -23,5 +27,15 @@ export const ContainerAnalysis = styled.div`
 `
 
 export const ContainerGraphic = styled.div` 
+    max-width: 1000px;
+    margin: 0;
+    padding: 0;
+`
 
+export const Graphic = styled.div`
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    /* -webkit-margin-start: none;
+    -webkit-margin-end: none; */
 `

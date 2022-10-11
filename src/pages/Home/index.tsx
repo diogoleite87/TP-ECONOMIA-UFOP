@@ -16,6 +16,12 @@ export default function Home() {
             <h2>Integrantes do grupo</h2>
             <p>André Lucas Santos, Diogo Leite Lucas e Vitor Marques dos Santos.</p>
 
+            <h2>Referências usadas no trabalho</h2>
+            <p>
+                <li>Rossetti, J. P. Introdução à economia. 20 ed. São Paulo: Atlas, 2003.</li>
+                <li>Pindyck,R. S.; Rubinfeld, D. L. Microeconomia. 7 ed. São Paulo: Pearson Education do Brasil, 2010.</li>
+            </p>
+
         </Container>
     )
 }

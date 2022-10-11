@@ -4,7 +4,6 @@ export const Container = styled.div`
     align-items: center;
     text-align: center;
     justify-content: space-space-between;
-    overflow-x: auto;
 `
 
 export const Table = styled.table`
@@ -16,8 +15,6 @@ export const Table = styled.table`
     margin: auto;
     margin-top: 5vh;
     margin-bottom: 5vh;
-    /* margin-inline-start: 10px;
-    margin-inline-end: 10px; */
     input {
         width: 5em;
     }
@@ -32,14 +29,18 @@ export const Table = styled.table`
     }
 `
 export const ContainerGraphic = styled.div`
-    display: inline-flex;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    /* align-items: center; */
     /* justify-content: space-between; */
-    margin-right: 10vh;
+    /* margin-right: 10vh; */
 
-    @media(max-width: 1440px) {
+    /* @media(max-width: 1440px) {
         display: inline;
 
-    }
+    } */
 `
 export const Graphic = styled.div`
     align-items: center;

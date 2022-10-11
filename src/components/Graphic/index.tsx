@@ -46,7 +46,7 @@ const Graphic = (props: IProps) => {
 
     return (
         <S.Container>
-            <div style={{ width: '85%', height: 300, }}>
+            <div style={{ width: '90%', height: 350, }}>
                 <ResponsiveContainer>
                     <LineChart data={data}>
                         <Line type="monotone" dataKey="CF" stroke="#2196F3" strokeWidth={3} />
