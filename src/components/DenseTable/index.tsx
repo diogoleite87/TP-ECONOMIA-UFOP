@@ -79,7 +79,7 @@ export default function Table() {
       handleOpen()
       setModalID(0)
     } else if (modalID == 7) {
-      setTitleModal("CTme: Custo Marginal Médio")
+      setTitleModal("CTme: Custo Total Médio")
       setSubtitleModal("É obtido através da divisão do custo total pela quantidade produzida. Importante variável a ser considerada, como o foco é o lucro é sempre interessante o valor de venda ser maior que o custo total médio.")
       handleOpen()
       setModalID(0)
