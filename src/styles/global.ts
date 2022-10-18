@@ -7,8 +7,8 @@ export default createGlobalStyle`
         padding: 0;
     }
     body {
-        background: #333;
-        color: #fff;
+        background: #fff;
+        color: #333;
         align-items: center;
         text-align: center;
         justify-content: center;

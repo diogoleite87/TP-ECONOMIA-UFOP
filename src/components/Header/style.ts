@@ -10,7 +10,7 @@ export const Container = styled.div`
 export const Title = styled.h1`
     margin-top: 3vh;
     margin-bottom: 2vh;
-    color: #fff;
+    color: #333;
     text-transform: uppercase;
 
     @media(max-width: 800px) {
