@@ -1,7 +1,8 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import * as S from './style'
 
 import Graphic from '../Graphic';
+import BasicModal from '../BasicModal';
 
 export default function Table() {
 
@@ -21,6 +22,13 @@ export default function Table() {
   const [q5, setQ5] = useState<number>(5);
   const [q6, setQ6] = useState<number>(6);
 
+  const [modalID, setModalID] = useState<number>(0);
+  const [titleModal, setTitleModal] = useState<string>("aaa");
+  const [subtitleModal, setSubtitleModal] = useState<string>("sdd");
+  const [open, setOpen] = useState(false);
+  const handleOpen = () => setOpen(true);
+  const handleClose = () => setOpen(false);
+
   type Analysis = {
     id: number;
     text: string
@@ -28,11 +36,6 @@ export default function Table() {
 
   const [analysis, setAnalysis] = useState<Analysis[]>([])
 
-  function checkAnalysis() {
-    if (ct1 > 3 * cf) {
-      addAnalysis("CT1 é 3 * maior que CF");
-    }
-  }
 
   function addAnalysis(text: string) {
     setAnalysis(prevAnalysis => [
@@ -41,20 +44,70 @@ export default function Table() {
     ])
   }
 
+  useEffect(() => {
+    // Update the document title using the browser API
+    console.log(modalID)
+
+    if (modalID == 1) {
+      setTitleModal("Q: Quantidade")
+      setSubtitleModal("Quantidade do produto.")
+      handleOpen()
+      setModalID(0)
+    } else if (modalID == 2) {
+      setTitleModal("CF: Custo Fixo")
+      setSubtitleModal("São todos aqueles custos que não variam independentemente da quantidade que foi produzida.")
+      handleOpen()
+      setModalID(0)
+    } else if (modalID == 3) {
+      setTitleModal("CV: Custo Variável")
+      setSubtitleModal("São todos aqueles custos que variam de acordo com a quantidade que foi produzida.")
+      handleOpen()
+      setModalID(0)
+    } else if (modalID == 4) {
+      setTitleModal("CT: Custo Total")
+      setSubtitleModal("Soma de todos os custos que uma empresa possui, seja ele fixo ou variável.")
+      handleOpen()
+      setModalID(0)
+    } else if (modalID == 5) {
+      setTitleModal("CFMe: Custo Fixo Médio")
+      setSubtitleModal("É o valor do custo fixo diluído por cada unidade que foi produzida, descobrindo o custo fixo de cada unidade para a empresa.")
+      handleOpen()
+      setModalID(0)
+    } else if (modalID == 6) {
+      setTitleModal("CVMe: Custo Variavel Médio")
+      setSubtitleModal("Ele diz respeito ao custo variável para cada unidade produzida. Variável importante para a precificação correta do produto.")
+      handleOpen()
+      setModalID(0)
+    } else if (modalID == 7) {
+      setTitleModal("CTme: Custo Marginal Médio")
+      setSubtitleModal("É obtido através da divisão do custo total pela quantidade produzida. Importante variável a ser considerada, como o foco é o lucro é sempre interessante o valor de venda ser maior que o custo total médio.")
+      handleOpen()
+      setModalID(0)
+    } else if (modalID == 8) {
+      setTitleModal("Cmg: Custo Marginal")
+      setSubtitleModal("Se diz respeito ao custo de se produzir uma nova unidade de um produto.")
+      handleOpen()
+      setModalID(0)
+    }
+  }, [modalID]);
+
   return (
 
     <S.Container>
+
+      <S.Title>Tabela e gráfico exemplo, insira o CT (Custo Total) para efetuar os cálculos e gerar o gráfico.</S.Title>
+
       <S.Table>
 
         <tr>
-          <th>Q</th>
-          <th>CF</th>
-          <th>CV</th>
-          <th>CT</th>
-          <th>CFme</th>
-          <th>CVme</th>
-          <th>Cme</th>
-          <th>Cmg</th>
+          <th><button onClick={() => setModalID(1)} >Q</button></th>
+          <th><button onClick={() => setModalID(2)} >CF</button></th>
+          <th><button onClick={() => setModalID(3)} >CV</button></th>
+          <th><button onClick={() => setModalID(4)} >CT</button></th>
+          <th><button onClick={() => setModalID(5)} >CFme</button></th>
+          <th><button onClick={() => setModalID(6)} >CVme</button></th>
+          <th><button onClick={() => setModalID(7)} >CTme</button></th>
+          <th><button onClick={() => setModalID(8)} >Cmg</button></th>
         </tr>
 
 
@@ -180,6 +233,7 @@ export default function Table() {
 
       </S.Graphic>
 
+      <BasicModal title={titleModal} subtitle={subtitleModal} handleOpen={handleOpen} handleClose={handleClose} open={open} />
     </S.Container>
   )
 }

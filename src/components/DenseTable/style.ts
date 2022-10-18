@@ -13,7 +13,7 @@ export const Table = styled.table`
     align-items: center;
     justify-content: center;
     margin: auto;
-    margin-top: 5vh;
+    margin-top: 3vh;
     margin-bottom: 5vh;
     input {
         width: 5em;
@@ -52,4 +52,9 @@ export const Graphic = styled.div`
 
 export const Analysis = styled.div`
 
+`
+
+export const Title = styled.p` 
+    font-size: 2vh;
+    margin-top: 3vh;
 `

@@ -5,10 +5,10 @@ export default function Home() {
     return (
         <Container title="Tela Inicial">
             <h2>Motivação do trabalho desenvolvido</h2>
-            <p>O site foi desenvolvido durante a disciplina de Economia, do curso Sistemas de Informações - UFOP. Com intuito de botar em prática um pouco do que foi aprendido/apresentado durante sala de aula.</p>
+            <p>A proposta tem como objetivo do trabalho a criação de um sistema web com explicações acerca dos custos de produção de uma empresa. Além da explicação, o produto gerado será uma tabela na qual o usuário preencherá duas colunas e o sistema irá fazer os cálculos restantes para o preenchimento da mesma, mostrando resultados em gráficos. O sistema ainda possui integrado uma aba que mostra uma curva de possibilidade de produção, que exemplifica a questão do trade off trabalhado em economia. </p>
 
             <h2>Assunto tratado no trabalho</h2>
-            <p>O presente trabalho aborda alguns conceitos da Economia, entre eles é apresentado Custo de Produção e Curva de Possibilidade de Produção. Ambos com suas respectivas páginas, contendo as informações e uma calculadora, seguida de gráficos.</p>
+            <p>O trabalho consiste em um sistema web dividido em três partes. A primeira com informações sobre o trabalho, a segunda abordando os custos de produção e a terceira aborda a curva de probabilidade de produção e trade off.</p>
 
             <h2>Linguagem e tecnologia na qual foi construído</h2>
             <p>O site foi construído em React e TypeScript, em seu formato Web.</p>
